@@ -1,99 +1,98 @@
 {
-  "version": 2,
   "buildCommand": "npm run build",
   "outputDirectory": ".",
-  "routes": [
+  "rewrites": [
     {
-      "src": "/battles",
-      "dest": "/modes/battles.html"
+      "source": "/battles",
+      "destination": "/modes/battles.html"
     },
     {
-      "src": "/upgrader",
-      "dest": "/modes/upgrader.html"
+      "source": "/upgrader",
+      "destination": "/modes/upgrader.html"
     },
     {
-      "src": "/roulette",
-      "dest": "/modes/roulette.html"
+      "source": "/roulette",
+      "destination": "/modes/roulette.html"
     },
     {
-      "src": "/crash",
-      "dest": "/modes/crash.html"
+      "source": "/crash",
+      "destination": "/modes/crash.html"
     },
     {
-      "src": "/jackpot",
-      "dest": "/modes/jackpot.html"
+      "source": "/jackpot",
+      "destination": "/modes/jackpot.html"
     },
     {
-      "src": "/coinflip",
-      "dest": "/modes/coinflip.html"
+      "source": "/coinflip",
+      "destination": "/modes/coinflip.html"
     },
     {
-      "src": "/saper",
-      "dest": "/modes/saper.html"
+      "source": "/saper",
+      "destination": "/modes/saper.html"
     },
     {
-      "src": "/redline",
-      "dest": "/cases/redline.html"
+      "source": "/redline",
+      "destination": "/cases/redline.html"
     },
     {
-      "src": "/luckylore",
-      "dest": "/cases/luckylore.html"
+      "source": "/luckylore",
+      "destination": "/cases/luckylore.html"
     },
     {
-      "src": "/blaze",
-      "dest": "/cases/blaze.html"
+      "source": "/blaze",
+      "destination": "/cases/blaze.html"
     },
     {
-      "src": "/tigertooth",
-      "dest": "/cases/tigertooth.html"
+      "source": "/tigertooth",
+      "destination": "/cases/tigertooth.html"
     },
     {
-      "src": "/deserteagle",
-      "dest": "/cases/deserteagle.html"
+      "source": "/deserteagle",
+      "destination": "/cases/deserteagle.html"
     },
     {
-      "src": "/ak47",
-      "dest": "/cases/ak47.html"
+      "source": "/ak47",
+      "destination": "/cases/ak47.html"
     },
     {
-      "src": "/m4a4",
-      "dest": "/cases/m4a4.html"
+      "source": "/m4a4",
+      "destination": "/cases/m4a4.html"
     },
     {
-      "src": "/awp",
-      "dest": "/cases/awp.html"
+      "source": "/awp",
+      "destination": "/cases/awp.html"
     },
     {
-      "src": "/1profit",
-      "dest": "/cases/1profit.html"
+      "source": "/1profit",
+      "destination": "/cases/1profit.html"
     },
     {
-      "src": "/poseidon",
-      "dest": "/cases/poseidon.html"
+      "source": "/poseidon",
+      "destination": "/cases/poseidon.html"
     },
     {
-      "src": "/25knife",
-      "dest": "/cases/25knife.html"
+      "source": "/25knife",
+      "destination": "/cases/25knife.html"
     },
     {
-      "src": "/10k",
-      "dest": "/cases/10k.html"
+      "source": "/10k",
+      "destination": "/cases/10k.html"
     },
     {
-      "src": "/profile",
-      "dest": "/diff/profile.html"
+      "source": "/profile",
+      "destination": "/diff/profile.html"
     },
     {
-      "src": "/deposit",
-      "dest": "/diff/deposit.html"
+      "source": "/deposit",
+      "destination": "/diff/deposit.html"
     },
     {
-      "src": "/terms",
-      "dest": "/diff/terms.html"
+      "source": "/terms",
+      "destination": "/diff/terms.html"
     },
     {
-      "src": "/privacy",
-      "dest": "/diff/privacy.html"
+      "source": "/privacy",
+      "destination": "/diff/privacy.html"
     }
   ],
   "headers": [
