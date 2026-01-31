@@ -1,0 +1,11 @@
+# Ignore source files, only deploy built files
+html/
+src/
+node_modules/
+.env
+.env.local
+*.log
+gulpfile.js
+inject-env.js
+server.js
+
