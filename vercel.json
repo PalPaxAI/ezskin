@@ -1,0 +1,119 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": ".",
+  "routes": [
+    {
+      "src": "/battles",
+      "dest": "/modes/battles.html"
+    },
+    {
+      "src": "/upgrader",
+      "dest": "/modes/upgrader.html"
+    },
+    {
+      "src": "/roulette",
+      "dest": "/modes/roulette.html"
+    },
+    {
+      "src": "/crash",
+      "dest": "/modes/crash.html"
+    },
+    {
+      "src": "/jackpot",
+      "dest": "/modes/jackpot.html"
+    },
+    {
+      "src": "/coinflip",
+      "dest": "/modes/coinflip.html"
+    },
+    {
+      "src": "/saper",
+      "dest": "/modes/saper.html"
+    },
+    {
+      "src": "/redline",
+      "dest": "/cases/redline.html"
+    },
+    {
+      "src": "/luckylore",
+      "dest": "/cases/luckylore.html"
+    },
+    {
+      "src": "/blaze",
+      "dest": "/cases/blaze.html"
+    },
+    {
+      "src": "/tigertooth",
+      "dest": "/cases/tigertooth.html"
+    },
+    {
+      "src": "/deserteagle",
+      "dest": "/cases/deserteagle.html"
+    },
+    {
+      "src": "/ak47",
+      "dest": "/cases/ak47.html"
+    },
+    {
+      "src": "/m4a4",
+      "dest": "/cases/m4a4.html"
+    },
+    {
+      "src": "/awp",
+      "dest": "/cases/awp.html"
+    },
+    {
+      "src": "/1profit",
+      "dest": "/cases/1profit.html"
+    },
+    {
+      "src": "/poseidon",
+      "dest": "/cases/poseidon.html"
+    },
+    {
+      "src": "/25knife",
+      "dest": "/cases/25knife.html"
+    },
+    {
+      "src": "/10k",
+      "dest": "/cases/10k.html"
+    },
+    {
+      "src": "/profile",
+      "dest": "/diff/profile.html"
+    },
+    {
+      "src": "/deposit",
+      "dest": "/diff/deposit.html"
+    },
+    {
+      "src": "/terms",
+      "dest": "/diff/terms.html"
+    },
+    {
+      "src": "/privacy",
+      "dest": "/diff/privacy.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    }
+  ]
+}
+
