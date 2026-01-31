@@ -1,0 +1,204 @@
+<nav class="nav">
+    <div class="wrapper">
+        <div class="nav__container">
+            <div class="nav__left">
+                <a href="../" class="nav__link nav__link--logo">
+                    <img src="../dist/img/ezskins1.png" alt="ezSkins logo" class="nav__link__logo-img">
+                </a>
+                <ul class="nav__list">
+                    <li id="cases" class="nav__item wider-left">
+                        <div class="nav__link-bg hidden"></div>
+                        <a href="../" class="nav__link"><i class="fa-solid fa-toolbox nav__icon"></i>Cases</a>
+                    </li>
+                    <li id="battles" class="nav__item">
+                        <div class="nav__link-bg hidden"></div>
+                        <a href="../battles" class="nav__link"><i
+                                class="fa-solid fa-bolt nav__icon"></i>Battles</a>
+                    </li>
+                    <li id="upgrader" class="nav__item">
+                        <div class="nav__link-bg hidden"></div>
+                        <a href="../upgrader" class="nav__link"><i
+                                class="fa-solid fa-circle-up nav__icon"></i>Upgrader</a>
+                    </li>
+                    <li id="roulette" class="nav__item">
+                        <div class="nav__link-bg hidden"></div>
+                        <a href="../roulette" class="nav__link"><i
+                                class="ti ti-rotate-dot nav__icon nav__icon--bigger"></i>Roulette</a>
+                    </li>
+                    <li class="nav__item nav__item--menu">
+                        <div class="nav__link-bg hidden"></div>
+                        <button class="nav__link nav__link--btn">Other<i
+                                class="fa-solid fa-arrow-down nav__icon"></i></button>
+                        <div class="nav__menu hidden">
+                            <div class="nav__menu-item">
+                                <a href="../crash" class="nav__link"><i
+                                        class="fa-solid fa-burst nav__menu-icon"></i>Crash</a>
+                            </div>
+                            <div class="nav__menu-item">
+                                <a href="../jackpot" class="nav__link"><i
+                                        class="fa-solid fa-clover nav__menu-icon"></i>Jackpot</a>
+                            </div>
+                            <div class="nav__menu-item">
+                                <a href="../coinflip" class="nav__link"><i
+                                        class="fa-solid fa-coins nav__menu-icon"></i>Coinflip</a>
+                            </div>
+                            <div class="nav__menu-item">
+                                <a href="../saper" class="nav__link"><i
+                                        class="fa-solid fa-bomb nav__menu-icon"></i>Mines</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="hamburger nav__hamb hamburger--spring" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <div class="user">
+                <div class="user__logged-out hidden">
+                    <button id="login-btn" class="user__btn"><span class="user__btn-span">Connect Wallet</span></button>
+                </div>
+                <div class="user__logged-in">
+                    <a href="../profile" class="user__profile"><img src="" alt="Your Profile Avatar"
+                            class="user__avatar"></a>
+                    <div class="user__middle">
+                        <a href="../profile" class="user__name"></a>
+                        <p class="user__balance">Balance: <span class="user__balance user__balance--amount"></span>
+                        </p>
+                    </div>
+                    <button id="withdraw-btn" class="user__btn user__btn--withdraw"><i
+                            class="fa-solid fa-arrow-up-from-bracket user__icon"></i>Withdraw</button>
+                    <button id="logout-btn" class="user__btn user__btn--logout user__btn--nobg"><i
+                            class="fa-solid fa-arrow-right-to-bracket user__icon"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="nav nav-mobile hidden">
+    <div class="user-mobile">
+        <div class="user-mobile__logged-out-mobile hidden">
+            <button id="login-btn-mobile" class="user-mobile__btn">Connect Wallet</button>
+        </div>
+        <div class="user-mobile__logged-in-mobile">
+            <div class="user-mobile__top">
+                <img src="" alt="Your Profile Avatar" class="user-mobile__avatar">
+                <div class="user-mobile__middle">
+                    <p class="user-mobile__name"></p>
+                    <p class="user-mobile__balance">Balance: <span
+                            class="user-mobile__balance user-mobile__balance--amount"></span></p>
+                </div>
+            </div>
+            <div class="user-mobile__bottom">
+                <button id="logout-btn-mobile" class="user-mobile__btn user-mobile__btn--logout"><i
+                        class="fa-solid fa-arrow-right-to-bracket user-mobile__icon"></i></button>
+            </div>
+        </div>
+    </div>
+    <ul class="nav-mobile__list">
+        <li class="nav-mobile__item"></li>
+        </li>
+        <li class="nav-mobile__item">
+            <a href="../" class="nav-mobile__link"><i
+                    class="fa-solid fa-toolbox nav-mobile__icon"></i>Cases</a>
+        </li>
+        <li class="nav-mobile__item">
+            <a href="../battles" class="nav-mobile__link"><i
+                    class="fa-solid fa-bolt nav-mobile__icon"></i>Battles</a>
+        </li>
+        <li class="nav-mobile__item">
+            <a href="../upgrader" class="nav-mobile__link"><i
+                    class="fa-solid fa-circle-up nav-mobile__icon"></i>Upgrader</a>
+        </li>
+        <li class="nav-mobile__item">
+            <a href="../roulette" class="nav-mobile__link"><i
+                    class="ti ti-rotate-dot nav-mobile__icon nav-mobile__icon--bigger"></i>Roulette</a>
+        </li>
+        <li class="nav-mobile__item">
+            <a href="../crash" class="nav-mobile__link"><i
+                    class="fa-solid fa-burst nav-mobile__icon"></i>Crash</a>
+        </li>
+        <li class="nav-mobile__item">
+            <a href="../jackpot" class="nav-mobile__link"><i
+                    class="fa-solid fa-clover nav-mobile__icon"></i>Jackpot</a>
+        </li>
+        <li class="nav-mobile__item">
+            <a href="../coinflip" class="nav-mobile__link"><i
+                    class="fa-solid fa-coins nav-mobile__icon"></i>Coinflip</a>
+        </li>
+        <li class="nav-mobile__item">
+            <a href="../saper" class="nav-mobile__link"><i
+                    class="fa-solid fa-bomb nav-mobile__icon"></i>Mines</a>
+        </li>
+    </ul>
+</div>
+<div class="wallet-modal hidden">
+    <div class="wallet-modal__overlay"></div>
+    <div class="wallet-modal__container">
+        <div class="wallet-modal__header">
+            <h3 class="wallet-modal__title">Connect Wallet</h3>
+            <button class="wallet-modal__close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="wallet-modal__content">
+            <p class="wallet-modal__subtitle">Select a wallet to connect</p>
+            <div class="wallet-modal__list">
+                <button class="wallet-modal__item" data-wallet="phantom">
+                    <div class="wallet-modal__item-icon">
+                        <img src="https://raw.githubusercontent.com/solana-labs/wallet-adapter/main/packages/wallets/icons/phantom.svg" alt="Phantom" class="wallet-modal__item-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="wallet-modal__item-logo-fallback" style="display: none;">
+                            <span>P</span>
+                        </div>
+                    </div>
+                    <div class="wallet-modal__item-info">
+                        <span class="wallet-modal__item-name">Phantom</span>
+                        <span class="wallet-modal__item-status" id="phantom-status">Not installed</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right wallet-modal__item-arrow"></i>
+                </button>
+                <button class="wallet-modal__item" data-wallet="solflare">
+                    <div class="wallet-modal__item-icon">
+                        <img src="https://raw.githubusercontent.com/solana-labs/wallet-adapter/main/packages/wallets/icons/solflare.svg" alt="Solflare" class="wallet-modal__item-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="wallet-modal__item-logo-fallback" style="display: none;">
+                            <span>S</span>
+                        </div>
+                    </div>
+                    <div class="wallet-modal__item-info">
+                        <span class="wallet-modal__item-name">Solflare</span>
+                        <span class="wallet-modal__item-status" id="solflare-status">Not installed</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right wallet-modal__item-arrow"></i>
+                </button>
+                <button class="wallet-modal__item" data-wallet="backpack">
+                    <div class="wallet-modal__item-icon">
+                        <img src="https://raw.githubusercontent.com/solana-labs/wallet-adapter/main/packages/wallets/icons/backpack.svg" alt="Backpack" class="wallet-modal__item-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="wallet-modal__item-logo-fallback" style="display: none;">
+                            <span>B</span>
+                        </div>
+                    </div>
+                    <div class="wallet-modal__item-info">
+                        <span class="wallet-modal__item-name">Backpack</span>
+                        <span class="wallet-modal__item-status" id="backpack-status">Not installed</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right wallet-modal__item-arrow"></i>
+                </button>
+                <button class="wallet-modal__item" data-wallet="glow">
+                    <div class="wallet-modal__item-icon">
+                        <img src="https://raw.githubusercontent.com/solana-labs/wallet-adapter/main/packages/wallets/icons/glow.svg" alt="Glow" class="wallet-modal__item-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="wallet-modal__item-logo-fallback" style="display: none;">
+                            <span>G</span>
+                        </div>
+                    </div>
+                    <div class="wallet-modal__item-info">
+                        <span class="wallet-modal__item-name">Glow</span>
+                        <span class="wallet-modal__item-status" id="glow-status">Not installed</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right wallet-modal__item-arrow"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

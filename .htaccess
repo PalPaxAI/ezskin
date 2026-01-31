@@ -1,0 +1,33 @@
+# URL Rewrite Rules - Remove .html extension and folder paths
+RewriteEngine On
+
+# Remove .html extension from direct requests
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)\.html$ /$1 [R=301,L]
+
+# List of pages in each folder
+# Modes pages
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} ^/(battles|upgrader|roulette|crash|jackpot|coinflip|saper)$
+RewriteRule ^(.*)$ /modes/$1.html [L]
+
+# Cases pages
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} ^/(redline|luckylore|blaze|tigertooth|deserteagle|ak47|m4a4|awp|1profit|poseidon|25knife|10k)$
+RewriteRule ^(.*)$ /cases/$1.html [L]
+
+# Diff pages
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} ^/(profile|deposit|terms|privacy)$
+RewriteRule ^(.*)$ /diff/$1.html [L]
+
+# Root page
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^$ /index.html [L]
+
