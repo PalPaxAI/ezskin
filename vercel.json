@@ -1,6 +1,7 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": ".",
+  "cleanUrls": false,
   "rewrites": [
     {
       "source": "/battles",
@@ -96,6 +97,15 @@
     }
   ],
   "headers": [
+    {
+      "source": "/(.*\\.(js|css|jpg|jpeg|png|gif|svg|ico|woff|woff2|ttf|eot|mp3|wav|mp4|webm))",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
     {
       "source": "/(.*)",
       "headers": [
