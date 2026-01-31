@@ -2,30 +2,52 @@
 const fs = require('fs');
 const path = require('path');
 
-// Đọc .env file
+// Đọc .env file hoặc environment variables
 function loadEnv() {
-	const envPath = path.join(__dirname, '.env');
-	
-	if (!fs.existsSync(envPath)) {
-		console.warn('⚠️  File .env không tồn tại. Sử dụng giá trị mặc định.');
-		return {};
-	}
-	
-	const envContent = fs.readFileSync(envPath, 'utf8');
 	const env = {};
 	
-	envContent.split('\n').forEach(line => {
-		line = line.trim();
-		// Bỏ qua comment và dòng trống
-		if (line && !line.startsWith('#')) {
-			const [key, ...valueParts] = line.split('=');
-			if (key && valueParts.length > 0) {
-				const value = valueParts.join('=').trim();
-				// Remove quotes nếu có
-				env[key.trim()] = value.replace(/^["']|["']$/g, '');
-			}
+	// Ưu tiên đọc từ process.env (Vercel, CI/CD, etc.)
+	// Các biến môi trường cần thiết
+	const envVars = [
+		'SOLANA_RPC_URL',
+		'SOLANA_NETWORK',
+		'WALLET_ADDRESS',
+		'SUPABASE_URL',
+		'SUPABASE_ANON_KEY',
+		'SUPABASE_SERVICE_ROLE_KEY',
+		'NODE_ENV'
+	];
+	
+	// Đọc từ process.env trước (cho Vercel)
+	envVars.forEach(key => {
+		if (process.env[key]) {
+			env[key] = process.env[key];
 		}
 	});
+	
+	// Nếu có file .env, đọc từ file (cho local development)
+	// Chỉ đọc từ file nếu chưa có trong process.env
+	const envPath = path.join(__dirname, '.env');
+	if (fs.existsSync(envPath)) {
+		const envContent = fs.readFileSync(envPath, 'utf8');
+		
+		envContent.split('\n').forEach(line => {
+			line = line.trim();
+			// Bỏ qua comment và dòng trống
+			if (line && !line.startsWith('#')) {
+				const [key, ...valueParts] = line.split('=');
+				if (key && valueParts.length > 0) {
+					const keyTrimmed = key.trim();
+					// Chỉ dùng giá trị từ file nếu chưa có trong process.env
+					if (!process.env[keyTrimmed]) {
+						const value = valueParts.join('=').trim();
+						// Remove quotes nếu có
+						env[keyTrimmed] = value.replace(/^["']|["']$/g, '');
+					}
+				}
+			}
+		});
+	}
 	
 	return env;
 }

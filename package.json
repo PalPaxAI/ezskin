@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "gulp",
     "build": "gulp build",
+    "vercel-build": "npm run build",
     "clean": "gulp clean",
     "start": "node server.js"
   },
